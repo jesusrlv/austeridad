@@ -1,0 +1,95 @@
+@-webkit-keyframes breath {
+    0%   {  
+        background-size: 110% auto;
+        background-image: url("img/img01.jpg");
+        background-color: rgba(240, 248, 255,0.3);
+        opacity: .9;
+       
+     }
+    25%{
+        opacity: .1;
+    }
+    27%{
+        opacity: .9;
+    }
+ 
+    50%  {  
+        background-size: 140% auto;
+        background-image: url("img/img02.jpg"); 
+        background-color: rgba(240, 248, 255,0.9);
+        opacity: .9;
+       
+    }
+    75%{
+        opacity: .1;
+    }
+    77%{
+        opacity: .9;
+    }
+
+    100% {  
+        background-size: 110% auto; 
+        background-image: url("img/img03.jpg");
+        background-color: rgba(240, 248, 255,0.3);
+        opacity: .3;
+    }   
+
+   }
+body{
+    /* -webkit-animation: breath 15s linear infinite alternate; */
+    /* animation: slide 16s infinite; */
+    /* background-image: url("img/img01.jpg"); */
+    /* background-size: 100%; */
+    /* animation: breath 9s infinite; */
+    /* animation-iteration-count: 1; */
+    /* animation-fill-mode: forwards; */
+}
+
+/* body::after{
+    opacity: 0.9;
+} */
+
+/* @keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+} */
+.back { 
+    position: relative; 
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* background-image: url('https://placekitten.com/1200/800'); */
+    background-size: cover;
+    -webkit-animation: breath 15s linear infinite alternate;
+    opacity: 1;
+    
+}
+
+.back::after{
+    opacity: 1;
+}
+
