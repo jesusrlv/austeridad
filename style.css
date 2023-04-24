@@ -35,11 +35,67 @@
     /* justify-content: center; */
     /* background-image: url('https://placekitten.com/1200/800'); */
     background-size: cover;
+    background-repeat: no-repeat;
     /* -webkit-animation: breath 15s linear infinite; */
     animation: breath 21s ease-in-out infinite ;
     
     
 }
+/* celular */
+@media screen and (max-width: 600px) {
 
+    @keyframes breath {
+        0%   {  
+            background-image: url("img/img01.jpg");
+            background-size: auto 110%;
+            background-position: right;
+         }
+       
+        50%{
+            opacity: 1;
+            background-image: url("img/img02.jpg");
+            background-size: auto 140%;
+            background-position: left;
+            /* background-color: rgba(240, 248, 255,0.9); */
+            
+        }
+     
+        100% {  
+            background-image: url("img/img03.jpg");
+            background-size: auto 110%;
+            opacity: 1;
+            background-position: right;
+        }   
 
+    }
+}
 
+ /* On screens that are 992px wide or less, go from four columns to two columns */
+      /* tablets, celular horizontal y otros dispositivos */
+      @media screen and (max-width: 2000px) {
+        @keyframes breath {
+            0%   {  
+                background-image: url("img/img01.jpg");
+                background-size: 110% auto;
+                background-position: top;
+             }
+           
+            50%{
+                opacity: 1;
+                background-image: url("img/img02.jpg");
+                background-size: 140% auto;
+                background-position: left;
+                /* background-color: rgba(240, 248, 255,0.9); */
+                
+            }
+         
+            100% {  
+                background-image: url("img/img03.jpg");
+                background-size: 110% auto;
+                opacity: 1;
+                background-position: top;
+            }   
+    
+        }
+    
+      } 
