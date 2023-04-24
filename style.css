@@ -72,11 +72,11 @@
 
  /* On screens that are 992px wide or less, go from four columns to two columns */
       /* tablets, celular horizontal y otros dispositivos */
-      @media screen and (max-width: 2000px) {
+      @media screen and (max-width: 992px) {
         @keyframes breath {
             0%   {  
                 background-image: url("img/img01.jpg");
-                background-size: 110% auto;
+                background-size: 120% auto;
                 background-position: top;
              }
            
@@ -91,7 +91,7 @@
          
             100% {  
                 background-image: url("img/img03.jpg");
-                background-size: 110% auto;
+                background-size: 120% auto;
                 opacity: 1;
                 background-position: top;
             }   
